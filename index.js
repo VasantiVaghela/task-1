@@ -7,7 +7,8 @@ var app = express();
 // This responds with "Hello World" on the homepage
 app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
-   res.send('Hello GET');
+   const userCount = 10;
+   res.send(`Hello GET. Users are: ${userCount}`);
 })
 
 
